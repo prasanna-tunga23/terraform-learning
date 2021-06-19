@@ -58,7 +58,7 @@ resource "aws_route_table" "pras-public"{
 
 resource "aws_route_table_association" "pras-public-1-a"{
   subnet_id=aws_subnet.pras-public-1.id
-  route_table_id=aws_route_table.pras.public.id
+  route_table_id=aws_route_table.pras-public.id
 }
 
   
